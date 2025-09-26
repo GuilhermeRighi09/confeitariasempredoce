@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: "Old Standard TT", serif;
 }
 
 body {
@@ -24,8 +24,9 @@ header {
 
 header h1 {
     text-align: center;
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 45px;
+    margin-bottom: 5px;
+    color: antiquewhite;
 }
 
 nav ul {
@@ -41,6 +42,7 @@ nav ul li {
 nav ul li a {
     color: antiquewhite;
     text-decoration: none;
+    font-family: "Red Hat Text", sans-serif;
 }
 
 nav ul li a:hover {
@@ -53,4 +55,61 @@ nav ul li a:hover {
     width: 100%;
     object-fit: cover;
     height: 300px;
+}
+
+.container h2 {
+    font-size: 40px;
+    text-align: center;
+    color: rgb(255, 218, 82);
+    font-family: "Old Standard TT", serif;
+}
+
+.container p {
+    text-align: center;
+    font-size: 21px;
+    color: rgb(255, 218, 82);
+    font-family: "Red Hat Text", sans-serif;
+}
+
+.sobre {
+    font-family: "Red Hat Text", sans-serif;
+}
+
+.menu-cardapio-itens {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-cardapio-item {
+    border: 2px solid rgb(255, 218, 82);
+    border-radius: 10px;
+    width: 30%;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(255, 218, 82);
+}
+
+.menu-cardapio h2 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: rgb(255, 218, 82);
+}
+
+.menu-cardapio-item h3 {
+    color: rgb(255, 218, 82);
+}
+
+.menu-cardapio-item p {
+    color: rgb(255, 218, 82);
+    font-family: "Old Standard TT", serif;
+}
+
+footer  {
+    background-color: antiquewhite;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 5px;
+    margin-top: 50px;
+    font-family: "Old Standard TT", serif;
 }
