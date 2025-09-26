@@ -102,7 +102,7 @@ nav ul li a:hover {
 
 .menu-cardapio-item p {
     color: rgb(255, 218, 82);
-    font-family: "Old Standard TT", serif;
+    font-family: "Red Hat Text", sans-serif;
 }
 
 footer  {
@@ -111,5 +111,5 @@ footer  {
     text-align: center;
     padding: 5px;
     margin-top: 50px;
-    font-family: "Old Standard TT", serif;
+    font-family: "Red Hat Text", sans-serif;
 }
