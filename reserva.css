@@ -1,0 +1,51 @@
+body {
+    font-family: "Manrope", sans-serif;
+    width: 100%;
+    text-align: center;
+    background-image: url("../img/imgfundo.jpg");
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+input {
+    height: 30px;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(212, 212, 212);
+}
+
+input[type="text"] {
+    width: 600px;
+    background-color: rgb(212, 212, 212);
+}
+
+input[type="date"] {
+    width: 300px;
+}
+
+input[type="number"] {
+    width: 300px;
+}
+
+button {
+    font-size: 25px;
+    padding: 10px;
+    border: 2px solid;
+    border-radius: 10px;
+    background-color: rgb(160, 160, 160);
+    cursor: pointer;
+}
+
+.link-agenda {
+    font-size: 30px;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+
+.link-agenda:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

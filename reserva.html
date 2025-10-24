@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de compromissos</title>
+    <link rel="stylesheet" href="../assets/css/reserva.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Minha Agenda de Compromissos</h1>
+    <br>
+    
+    <form id="formCompromisso">  
+        <h2>Título do Compromisso</h2>
+        <input type="text" id="compromissos" required>  
+        
+        <div>
+            <h2>Data Inicial e Final</h2>
+            <input type="date" id="data_inicio" required>
+            <input type="date" id="data_fim" required>
+        </div>
+        
+        <div>
+            <h2>Horário Inicial e Final</h2>
+            <input type="number" id="horario_inicio" required> 
+            <input type="number" id="horario_fim" required>   
+        
+        <br><br>
+        <button type="submit">Salvar Compromisso</button>
+    </form>
+    
+    <br><br>
+    <a href="calendario.html" class="link-agenda">Ver Agenda</a>
+    
+    <script src="../assets/js/index.js"></script>  
+</body>
+</html>
