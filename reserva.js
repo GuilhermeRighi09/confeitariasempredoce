@@ -10,12 +10,6 @@ function adicionarCompromisso() {
     const horario_inicio = document.getElementById('horario_inicio');
     const horario_fim = document.getElementById('horario_fim');
 
-    // Validação básica
-    if (!compromisso.value || !data_inicio.value || !data_fim.value || !horario_inicio.value || !horario_fim.value) {
-        alert('Preencha todos os campos!');
-        return;
-    }
-
     const start = `${data_inicio.value}T${horario_inicio.value}:00`;
     const end = `${data_fim.value}T${horario_fim.value}:00`;
 

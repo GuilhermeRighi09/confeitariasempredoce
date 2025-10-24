@@ -10,12 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Minha Agenda de Compromissos</h1>
+    <h1>Minha Agenda de Pedidos</h1>
     <br>
     
     <form id="formCompromisso">  
-        <h2>Título do Compromisso</h2>
-        <input type="text" id="compromissos" required>  
+        
+        <h2>Nome do Cliente</h2>
+        <input type="text" id="nome_cliente" required placeholder="">
+        
+        <h2>Produto a Ser Reservado</h2>
+        <input type="text" id="produto" required placeholder="">
+        
+        <h2>Quantidade (Unidades)</h2>
+        <input type="number" id="quantidade" required min="1" placeholder="Ex.: 1">
         
         <div>
             <h2>Data Inicial e Final</h2>
@@ -25,8 +32,18 @@
         
         <div>
             <h2>Horário Inicial e Final</h2>
-            <input type="number" id="horario_inicio" required> 
-            <input type="number" id="horario_fim" required>   
+            <input type="time" id="horario_inicio" required> 
+            <input type="time" id="horario_fim" required>    
+        </div>
+        
+        <h2>Data da Reserva (Retirada)</h2>
+        <input type="date" id="data_retirada" required>
+        
+        <h2>Telefone do Cliente</h2>
+        <input type="tel" id="telefone" required placeholder="">
+        
+        <h2>Comentários Adicionais</h2>
+        <textarea id="comentarios" rows="4" placeholder=""></textarea>
         
         <br><br>
         <button type="submit">Salvar Compromisso</button>

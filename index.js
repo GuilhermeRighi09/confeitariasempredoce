@@ -10,20 +10,17 @@ function adicionarCompromisso() {
     const horario_inicio = document.getElementById('horario_inicio');
     const horario_fim = document.getElementById('horario_fim');
 
-   
-    if (!compromisso.value || !data_inicio.value || !data_fim.value || !horario_inicio.value || !horario_fim.value) {
-        alert('Por favor, preencha todos os campos!');
+    const start = new Date(`${data_inicio.value}T${horario_inicio.value}:00`);
+    const end = new Date(`${data_fim.value}T${horario_fim.value}:00`);
+    if (isNaN(start.getTime()) || isNaN(end.getTime())) {
+        alert('Datas ou horários inválidos!');
         return;
     }
 
-    
-    const start = `${data_inicio.value}T${horario_inicio.value}:00`;
-    const end = `${data_fim.value}T${horario_fim.value}:00`;
-
     const compromissoCalendario = {
         title: compromisso.value,
-        start: start,
-        end: end
+        start: start.toISOString(), 
+        end: end.toISOString()
     };
 
     let compromissoLS = localStorage.getItem('compromisso');  
@@ -34,17 +31,22 @@ function adicionarCompromisso() {
         compromissoLS = JSON.parse(compromissoLS);
     }
 
-   
     compromissoLS.push(compromissoCalendario);
 
-   
     localStorage.setItem('compromisso', JSON.stringify(compromissoLS));  
 
     alert('Compromisso adicionado com sucesso!');
 
+   
     compromisso.value = '';
     data_inicio.value = '';
     data_fim.value = '';
     horario_inicio.value = '';
     horario_fim.value = '';
+}
+
+function adicionarCompromisso() {
+    console.log('Tentando adicionar:', compromissoCalendario);
+    console.log('Array atual no LS:', compromissoLS);
+    console.log('Array após adição:', compromissoLS);
 }
