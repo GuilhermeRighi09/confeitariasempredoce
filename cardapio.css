@@ -1,0 +1,19 @@
+.img-cardapio {
+width: 100%;
+height: 200px;
+width: 250px;
+object-fit: cover;
+border-radius: 15%;
+}
+
+.menu-cardapio-itens {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.menu-cardapio-item {
+    margin-bottom: 20px;
+}
+
